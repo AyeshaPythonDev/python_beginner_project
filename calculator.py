@@ -18,7 +18,7 @@ while True :
        print(f"Result : {num1} + {num2} = {result}")
     elif operator == "-":
         result = subtract(num1 , num2)
-         print(f"Result: {num1} - {num2} = {result}")
+        print(f"Result: {num1} - {num2} = {result}")
     elif operator == "*":
           result = multiply(num1 , num2)
           print(f"Result : {num1} * {num2} = {result}")
@@ -28,12 +28,12 @@ while True :
           else:
             result = divide(num1 , num2)
             print(f"Result:{num1} / {num2} = { result}")
-          else : 
-            print("Invalid operator ! Please use +, -, *, /")
-            again = input("Do you want to calculate again? (yes/no) : ").lower()
-          if again != 'yes":
-           print("Calculator closed. Thank you!")
-           break
+    else : 
+          print("Invalid operator ! Please use +, -, *, /")
+    again = input("Do you want to calculate again? (yes/no) : ").lower()
+    if again != "yes":
+            print("Calculator closed. Thank you!")
+            break
   except ValueError : 
           print("Error : Please enter valid numbers only!")
 
